@@ -46,30 +46,18 @@
 
 	'use strict';
 	
-	var _store = __webpack_require__(1);
+	var _actions = __webpack_require__(1);
+	
+	var _store = __webpack_require__(2);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	console.log(_store2.default); //import {action} from './actions'
+	console.log(_store2.default);
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _actions = __webpack_require__(2);
-
-	exports.default = _actions.actionTypes;
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -80,7 +68,7 @@
 	exports.actionTypes = undefined;
 	exports.action = action;
 	
-	var _store = __webpack_require__(1);
+	var _store = __webpack_require__(2);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -88,6 +76,20 @@
 	
 	var actionTypes = exports.actionTypes = 1;
 	function action() {}
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _actions = __webpack_require__(1);
+
+	exports.default = _actions.actionTypes;
 
 /***/ }
 /******/ ]);
